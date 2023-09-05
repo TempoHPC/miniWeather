@@ -1,0 +1,1 @@
+/usr/bin/mpic++ -Ofast -march=native -DNO_INFORM -std=c++11 -rdynamic CMakeFiles/openmp_test.dir/miniWeather_mpi_openmp.cpp.o -o openmp_test  -lpnetcdf -fopenmp 

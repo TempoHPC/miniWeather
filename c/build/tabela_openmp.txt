@@ -1,0 +1,5 @@
+OPENMP
+1 nucleos 	CPU Time: 24.1638 sec
+2 nucleos 	CPU Time: 13.7233 sec
+4 nucleos 	CPU Time: 8.54058 sec
+8 nucleos 	CPU Time: 10.756 sec

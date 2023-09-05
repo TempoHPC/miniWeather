@@ -1,0 +1,9 @@
+/prj/cenapadrj/ifreitas/Documentos/miniWeather/c/build/CMakeFiles/serial.dir
+/prj/cenapadrj/ifreitas/Documentos/miniWeather/c/build/CMakeFiles/serial_test.dir
+/prj/cenapadrj/ifreitas/Documentos/miniWeather/c/build/CMakeFiles/mpi.dir
+/prj/cenapadrj/ifreitas/Documentos/miniWeather/c/build/CMakeFiles/mpi_test.dir
+/prj/cenapadrj/ifreitas/Documentos/miniWeather/c/build/CMakeFiles/openmp.dir
+/prj/cenapadrj/ifreitas/Documentos/miniWeather/c/build/CMakeFiles/openmp_test.dir
+/prj/cenapadrj/ifreitas/Documentos/miniWeather/c/build/CMakeFiles/test.dir
+/prj/cenapadrj/ifreitas/Documentos/miniWeather/c/build/CMakeFiles/edit_cache.dir
+/prj/cenapadrj/ifreitas/Documentos/miniWeather/c/build/CMakeFiles/rebuild_cache.dir

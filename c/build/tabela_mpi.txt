@@ -1,0 +1,5 @@
+MPI
+1 nucleos	CPU Time: 18.2458 sec
+2 nucleos	CPU Time: 9.72405 sec
+4 nucleos	CPU Time: 5.9126 sec
+8 nucleos	CPU Time: 9.11371 sec

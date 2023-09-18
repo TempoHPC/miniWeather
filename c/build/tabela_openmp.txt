@@ -1,5 +1,26 @@
 OPENMP
-1 nucleos 	CPU Time: 24.1638 sec
-2 nucleos 	CPU Time: 13.7233 sec
-4 nucleos 	CPU Time: 8.54058 sec
-8 nucleos 	CPU Time: 10.756 sec
+1ª Execução-----------	-----------------------
+1 nucleos 	CPU Time: 24.1949 sec
+2 nucleos 	CPU Time: 13.8017 sec
+4 nucleos 	CPU Time: 8.56677 sec
+8 nucleos 	CPU Time: 9.40243 sec
+2ª Execução-----------	-----------------------
+1 nucleos 	CPU Time: 24.392 sec
+2 nucleos 	CPU Time: 14.0113 sec
+4 nucleos 	CPU Time: 8.44862 sec
+8 nucleos 	CPU Time: 9.52044 sec
+3ª Execução-----------	-----------------------
+1 nucleos 	CPU Time: 24.3682 sec
+2 nucleos 	CPU Time: 14.5082 sec
+4 nucleos 	CPU Time: 17.0922 sec
+8 nucleos 	CPU Time: 10.9905 sec
+4ª Execução-----------	-----------------------
+1 nucleos 	CPU Time: 25.11 sec
+2 nucleos 	CPU Time: 13.4802 sec
+4 nucleos 	CPU Time: 9.29054 sec
+8 nucleos 	CPU Time: 9.2363 sec
+5ª Execução-----------	-----------------------
+1 nucleos 	CPU Time: 24.1204 sec
+2 nucleos 	CPU Time: 13.8547 sec
+4 nucleos 	CPU Time: 7.88566 sec
+8 nucleos 	CPU Time: 9.67237 sec

@@ -1,4 +1,5 @@
-1 nucleos
+5 ª Execução
+1 nucleo
 2 nucleos
 4 nucleos
 8 nucleos

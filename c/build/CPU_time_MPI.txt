@@ -1,5 +1,0 @@
------------------------
-CPU Time: 18.4709 sec
-CPU Time: 9.73817 sec
-CPU Time: 5.88182 sec
-CPU Time: 8.95236 sec

@@ -1,8 +1,6 @@
-chmod +x ./tabela_mpi.sh
-./tabela_mpi.sh
+echo MPI > tabelaGeral.txt
+./tabela_mpi.sh >> tabelaGeral.txt
 
-chmod +x ./tabela_openmp.sh
-./tabela_openmp.sh
+echo Openmp >> tabelaGeral.txt
+./tabela_openmp.sh >> tabelaGeral.txt
 
-paste tabela_mpi.txt tabela_openmp.txt > tabela_geral.txt
-cat tabela_geral.txt

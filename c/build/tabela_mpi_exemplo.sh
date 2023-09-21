@@ -1,6 +1,6 @@
-cp processos.txt tabelaAnterior.txt;
+cp processos.txt tabelaAnteriorMPI.txt;
  
-echo "MPI" > tabelaAtual.txt
+echo "MPI" > tabelaAtualMPI.txt
  
  function CompFicticia(){
 	echo CompFicticia

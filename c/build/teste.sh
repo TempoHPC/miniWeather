@@ -1,4 +1,3 @@
-
 cp processos.txt tabelaAnterior.txt;
  
 echo "MPI" > tabelaAtual.txt

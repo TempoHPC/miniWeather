@@ -1,24 +1,45 @@
-cp processos.txt tabelaAnterior.txt;
+cp processos.txt tabelaAnteriorMPI.txt;
+ 
+echo "MPI" > tabelaAtualMPI.txt
 
-echo "MPI" > tabelaAtual.txt
+ function ProgramaMPI(){
+	mpirun --oversubscribe -n $nucleos ./mpi
 
-function ProgramaMPI() {
-
-    np=(1 2 4 8 16 32);
-    for p in ${np[@]}; do
-        mpirun --oversubscribe -n $p ./mpi 
-    done
 }
+	
+rm CPU_time_MPI.txt
 
-rm CPU_time_MPI2.txt
+  for i in {1..5}; do
+    
+	nucleos=1
+	#echo $nucleos "nucleo" >> processos.txt
+	ProgramaMPI | grep "CPU Time:" | cut -c10-  > CPU_time_MPI.txt
 
-for i in {1..5}; do
-    ProgramaMPI | grep "CPU Time:" | cut -c10- >> CPU_time_MPI2.txt
+	nucleos=2
+	#echo $nucleos "nucleos" >> processos.txt
+	ProgramaMPI | grep "CPU Time:" | cut -c10- >> CPU_time_MPI.txt
 
-	paste tabelaAnterior.txt CPU_time_MPI2.txt > tabelaAtual.txt
-	cp tabelaAtual.txt tabelaAnterior.txt;
-   
+	nucleos=4
+	#echo $nucleos "nucleos" >> processos.txt
+	ProgramaMPI | grep "CPU Time:" | cut -c10- >> CPU_time_MPI.txt
 
-done
+	nucleos=8
+	#echo $nucleos "nucleos" >> processos.txt
+	ProgramaMPI | grep "CPU Time:" | cut -c10- >> CPU_time_MPI.txt
+	
+	nucleos=16
+	#echo $nucleos "nucleos" >> processos.txt
+	ProgramaMPI | grep "CPU Time:" | cut -c10- >> CPU_time_MPI.txt
+	
+	nucleos=32
+	#echo $nucleos "nucleos" >> processos.txt
+	ProgramaMPI | grep "CPU Time:" | cut -c10- >> CPU_time_MPI.txt
 
-cat tabelaAtual.txt
+	paste tabelaAnteriorMPI.txt CPU_time_MPI.txt >tabelaAtualMPI.txt
+	cp tabelaAtualMPI.txt tabelaAnteriorMPI.txt;
+    
+	
+    done
+    
+    
+cat tabelaAtualMPI.txt

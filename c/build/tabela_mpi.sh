@@ -1,4 +1,6 @@
+cp processos.txt tabelaAnteriorMPI.txt;
 echo "MPI" > tabelaAtualMPI.txt
+
 
 function ProgramaMPI() {
      mpirun --oversubscribe -n $1 ./mpi 

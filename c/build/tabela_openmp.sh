@@ -1,46 +1,23 @@
-cp threads.txt tabelaAnteriorOPENMP.txt;
- 
+cp threads.txt tabelaAnteriorOPENMP.txt
+
 echo "OPENMP" > tabelaAtualOPENMP.txt
 
- function ProgramaOPENMP(){
-	
-	OMP_NUM_THREADS=$nucleos ./openmp
-
+function ProgramaOPENMP() {
+    OMP_NUM_THREADS=$1 ./openmp
 }
-	
-rm CPU_time_openmp.txt
 
-  for i in {1..5}; do
-    
-	nucleos=1
-	#echo $nucleos "nucleo" >> processos.txt
-	ProgramaOPENMP | grep "CPU Time:" | cut -c10-  > CPU_time_openmp.txt
+rm CPU_time_OPENMP.txt
 
-	nucleos=2
-	#echo $nucleos "nucleos" >> processos.txt
-	ProgramaOPENMP | grep "CPU Time:" | cut -c10- >> CPU_time_openmp.txt
+np=(1 2 4 8 16 32)
 
-	nucleos=4
-	#echo $nucleos "nucleos" >> processos.txt
-	ProgramaOPENMP | grep "CPU Time:" | cut -c10- >> CPU_time_openmp.txt
-
-	nucleos=8
-	#echo $nucleos "nucleos" >> processos.txt
-	ProgramaOPENMP | grep "CPU Time:" | cut -c10- >> CPU_time_openmp.txt
-	
-	nucleos=16
-	#echo $nucleos "nucleos" >> processos.txt
-	ProgramaOPENMP | grep "CPU Time:" | cut -c10- >> CPU_time_openmp.txt
-	
-	nucleos=32
-	#echo $nucleos "nucleos" >> processos.txt
-	ProgramaOPENMP | grep "CPU Time:" | cut -c10- >> CPU_time_openmp.txt
-
-	paste tabelaAnteriorOPENMP.txt CPU_time_openmp.txt > tabelaAtualOPENMP.txt
-	cp tabelaAtualOPENMP.txt tabelaAnteriorOPENMP.txt;
-    
-	
+for p in "${np[@]}"; do
+    nucleos="${p} nucleos"
+    for _ in {1..5}; do
+        ProgramaOPENMP "$p" | grep "CPU Time:" | cut -c10- | tr '\n' '\t' >> CPU_time_OPENMP.txt
     done
-    
-    
+    echo -e "$nucleos\t $(cat CPU_time_OPENMP.txt)" >> tabelaAtualOPENMP.txt
+    rm CPU_time_OPENMP.txt
+done
+
 cat tabelaAtualOPENMP.txt
+

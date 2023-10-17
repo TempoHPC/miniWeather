@@ -1,1 +1,1 @@
-/usr/bin/mpic++ -Ofast -march=native -DNO_INFORM -std=c++11 -rdynamic CMakeFiles/serial.dir/miniWeather_serial.cpp.o -o serial  -lpnetcdf 
+/usr/bin/mpic++  -Ofast -march=native -DNO_INFORM -std=c++11  -rdynamic CMakeFiles/serial.dir/miniWeather_serial.cpp.o  -o serial  -lpnetcdf 

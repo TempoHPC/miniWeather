@@ -1,1 +1,1 @@
-/usr/bin/mpic++ -Ofast -march=native -DNO_INFORM -std=c++11 -rdynamic CMakeFiles/mpi.dir/miniWeather_mpi.cpp.o -o mpi  -lpnetcdf 
+/usr/bin/mpic++  -Ofast -march=native -DNO_INFORM -std=c++11  -rdynamic CMakeFiles/mpi.dir/miniWeather_mpi.cpp.o  -o mpi  -lpnetcdf 

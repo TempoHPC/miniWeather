@@ -1,0 +1,6 @@
+1 nucleos	  108.098 sec	 113.677 sec	 103.555 sec	 122.766 sec	 158.293 sec	
+2 nucleos	  118.352 sec	 128.204 sec	 94.4377 sec	 102.374 sec	 121.385 sec	
+4 nucleos	  124.092 sec	 163.482 sec	 132.968 sec	 79.7039 sec	 79.9359 sec	
+8 nucleos	  101.763 sec	 102.021 sec	 120.91 sec	     107.238 sec	 169.561 sec	
+16 nucleos	  141.253 sec	 128.522 sec	 123.776 sec	 124.76 sec	     116.316 sec	
+32 nucleos	  108.376 sec	 97.3857 sec	 117.037 sec	 107.396 sec	 107.969 sec	

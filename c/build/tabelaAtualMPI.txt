@@ -1,0 +1,1 @@
+1 nucleos	 115.707 sec	 145.659 sec	 220.808 sec	 129.976 sec	 123.844 sec	

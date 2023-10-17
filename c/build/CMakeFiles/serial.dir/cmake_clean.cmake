@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/serial.dir/miniWeather_serial.cpp.o"
-  "CMakeFiles/serial.dir/miniWeather_serial.cpp.o.d"
   "serial"
   "serial.pdb"
 )

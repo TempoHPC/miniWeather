@@ -1,36 +1,15 @@
-# título do gráfico
+# tÃ­tulo do grÃ¡fico
+set title "Desempenho em FunÃ§Ã£o do NÃºmero de NÃºcleos"
 
-
-set title "Desempenho em Função do Número de Núcleos"
-
-
-
-
-# formato do arquivo de saída 
-
-
+# formato do arquivo de saÃ­da 
 set term "png"
 
-
-
-
-# arquivo de saída
-
-
+# arquivo de saÃ­da
 set output "graficoOPENMP.png"
 
-
-
-
-#  gráfico de linhas
-
-
+#  grÃ¡fico de linhas
 plot "tabelaAtualOPENMP.txt" using 1:3 w linespoint
-
 plot "tabelaAtualOPENMP.txt" using 1:5 w linespoint
-
 plot "tabelaAtualOPENMP.txt" using 1:7 w linespoint
-
 plot "tabelaAtualOPENMP.txt" using 1:9 w linespoint
-
 replot "tabelaAtualOPENMP.txt" using 1:11 w linespoint

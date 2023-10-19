@@ -9,7 +9,7 @@ set output "graficoOPENMP.png"
 
 #  gráfico de linhas
 plot "tabelaAtualOPENMP.txt" using 1:3 w linespoint
-plot "tabelaAtualOPENMP.txt" using 1:5 w linespoint
-plot "tabelaAtualOPENMP.txt" using 1:7 w linespoint
-plot "tabelaAtualOPENMP.txt" using 1:9 w linespoint
+replot "tabelaAtualOPENMP.txt" using 1:5 w linespoint
+replot "tabelaAtualOPENMP.txt" using 1:7 w linespoint
+replot "tabelaAtualOPENMP.txt" using 1:9 w linespoint
 replot "tabelaAtualOPENMP.txt" using 1:11 w linespoint

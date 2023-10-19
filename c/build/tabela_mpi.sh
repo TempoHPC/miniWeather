@@ -1,4 +1,3 @@
-cp processos.txt tabelaAnteriorMPI.txt
 rm tabelaAtualMPI.txt
 rm CPU_time_MPI.txt
 
@@ -18,3 +17,5 @@ for p in ${np[@]}; do
 done
 
 cat tabelaAtualMPI.txt
+
+

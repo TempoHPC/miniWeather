@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/openmp.dir/miniWeather_mpi_openmp.cpp.o"
+  "CMakeFiles/openmp.dir/miniWeather_mpi_openmp.cpp.o.d"
   "openmp"
   "openmp.pdb"
 )

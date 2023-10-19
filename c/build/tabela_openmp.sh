@@ -1,4 +1,3 @@
-cp threads.txt tabelaAnteriorOPENMP.txt
 rm tabelaAtualOPENMP.txt
 rm CPU_time_OPENMP.txt
 

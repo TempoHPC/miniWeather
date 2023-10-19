@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/mpi_test.dir/miniWeather_mpi.cpp.o"
+  "CMakeFiles/mpi_test.dir/miniWeather_mpi.cpp.o.d"
   "mpi_test"
   "mpi_test.pdb"
 )

@@ -1,0 +1,6 @@
+1 nucleos	 41.79
+2 nucleos	 22.12
+4 nucleos	 12.07
+8 nucleos	 10.49
+16 nucleos	 10.53
+24 nucleos	 10.55

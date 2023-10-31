@@ -1,0 +1,6 @@
+1 nucleos	172.22
+2 nucleos	 90.13
+4 nucleos	 48.51
+8 nucleos	 25.23
+16 nucleos	 13.26
+24 nucleos	 12.34

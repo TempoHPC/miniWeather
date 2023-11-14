@@ -13,17 +13,11 @@ awk 'NR==1 { tempoideal = $3;
 
 # --------------------------------------------------------
 #errado-----------------------
-awk 'NR==1 { tempo = $3; 
+awk 'NR == 1 {T1 = $3} 
 
-	for(i=1; i<=6; i++){ 
-	tempo = tempo / i; 
+	{ print $1, T1/$3 }' tabelaA.txt > speedupA.txt
 
-	print tempo 
-}
 
-}' tabelaA.txt > speedupA.txt
-
-echo -e "1"$'\n'"2"$'\n'"4"$'\n'"8"$'\n'"16"$'\n'"32"$'\n' > speedupideal.txt
-
-paste tabelaA.txt tempoidealA.txt speedupideal.txt speedupA.txt  >> desempenho.txt
+paste tabelaA.txt tempoidealA.txt speedupA.txt  >> desempenho.txt
 cat desempenho.txt
+

@@ -1,7 +1,11 @@
 rm desempenho.txt
 
 awk 'NR==1 { tempoideal = $3}
-	{ print tempoideal, tempoideal/2 }' tabelaA.txt > tempoidealA.txt
+    { tempoideal/=2
+
+	print tempoideal
+
+ }' tabelaA.txt > tempoidealA.txt
 
 # --------------------------------------------------------
 

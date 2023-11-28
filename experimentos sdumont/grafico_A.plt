@@ -7,6 +7,16 @@ set term "png"
 # arquivo de saída
 set output "grafico_A.png"
 
-#  gráfico de linhas
+# eixo y Desempenho
+set ylabel "Desempenho"
+set ytics nomirror
 
-plot "tabelaA.txt" using 1:3 w linespoint title "Desempenho"
+# eixo y2 Speedup
+set y2label "Speedup"
+set y2tics nomirror
+
+# gráfico de linhas
+plot "desempenhoA.txt" using 1:3 w linespoint title "Desempenho obtido", \
+     "desempenhoA.txt" using 1:4 w linespoint title "Desempenho ideal", \
+     "desempenhoA.txt" using 1:6 w linespoint title "Speedup obtido" axes x1y2, \
+     "desempenhoA.txt" using 1:5 w linespoint title "Speedup ideal" axes x1y2

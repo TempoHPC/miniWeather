@@ -1,0 +1,6 @@
+/scratch/cenapadrjsd/isabel.barboza/miniWeather/c/build_scalasca/scorep_sum_MPI-1_JOBID-11068118/slurm-11068118.out:CPU Time: 31.2033 sec
+/scratch/cenapadrjsd/isabel.barboza/miniWeather/c/build_scalasca/scorep_sum_MPI-2_JOBID-11068143/slurm-11068143.out:CPU Time: 17.3159 sec
+/scratch/cenapadrjsd/isabel.barboza/miniWeather/c/build_scalasca/scorep_sum_MPI-4_JOBID-11068154/slurm-11068154.out:CPU Time: 9.37757 sec
+/scratch/cenapadrjsd/isabel.barboza/miniWeather/c/build_scalasca/scorep_sum_MPI-8_JOBID-11068171/slurm-11068171.out:CPU Time: 6.36677 sec
+/scratch/cenapadrjsd/isabel.barboza/miniWeather/c/build_scalasca/scorep_sum_MPI-16_JOBID-11068187/slurm-11068187.out:CPU Time: 4.77374 sec
+/scratch/cenapadrjsd/isabel.barboza/miniWeather/c/build_scalasca/scorep_sum_MPI-24_JOBID-11068193/slurm-11068193.out:CPU Time: 6.23772 sec

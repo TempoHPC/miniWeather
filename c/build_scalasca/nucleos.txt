@@ -1,0 +1,6 @@
+1  nucleos
+2  nucleos
+4  nucleos
+8  nucleos
+16 nucleos
+24 nucleos

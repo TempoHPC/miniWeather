@@ -1,0 +1,47 @@
+
+Estimated aggregate size of event trace:                   19MB
+Estimated requirements for largest trace buffer (max_buf): 10MB
+Estimated memory requirements (SCOREP_TOTAL_MEMORY):       12MB
+(hint: When tracing set SCOREP_TOTAL_MEMORY=12MB to avoid intermediate flushes
+ or reduce requirements using USR regions filters.)
+
+flt     type max_buf[B]  visits time[s] time[%] time/visit[us]  region
+         ALL  9,843,207 622,272   36.50   100.0          58.66  ALL
+         USR  5,374,056 447,738   26.48    72.5          59.14  USR
+         MPI  3,746,590 114,322    5.97    16.4          52.25  MPI
+         COM    722,520  60,210    4.05    11.1          67.19  COM
+      SCOREP         41       2    0.00     0.0         374.32  SCOREP
+
+         USR  2,346,168 195,514    0.04     0.1           0.21  void gravity_waves(double, double, double&, double&, double&, double&, double&, double&)
+         USR  2,346,168 195,514    0.05     0.1           0.26  void hydro_const_bvfreq(double, double, double&, double&)
+         MPI  1,566,000  36,000    0.04     0.1           1.19  MPI_Irecv
+         MPI  1,566,000  36,000    0.06     0.2           1.56  MPI_Isend
+         COM    432,000  36,000    3.70    10.1         102.67  void semi_discrete_step(double*, double*, double*, double, int, double*, double*)
+         MPI    432,000  36,000    0.60     1.6          16.56  MPI_Waitall
+         USR    216,000  18,000    0.03     0.1           1.56  void set_halo_values_z(double*)
+         COM    216,000  18,000    0.07     0.2           3.98  void set_halo_values_x(double*)
+         USR    216,000  18,000   14.77    40.5         820.44  void compute_tendencies_z(double*, double*, double*, double)
+         USR    216,000  18,000   11.59    31.8         644.07  void compute_tendencies_x(double*, double*, double*, double)
+         COM     72,000   6,000    0.01     0.0           2.25  void perform_timestep(double*, double*, double*, double*, double)
+         MPI     39,200     800    0.71     1.9         881.97  MPI_File_write_at_all
+         USR     33,696   2,708    0.00     0.0           0.27  void ncwrap(int, int)
+         MPI     33,132   1,004    0.92     2.5         918.37  MPI_Allreduce
+         MPI     29,498     301    0.83     2.3        2766.37  MPI_File_write_at
+         MPI     19,296   1,608    0.00     0.0           0.39  MPI_Comm_rank
+         MPI     13,400     400    0.57     1.6        1428.75  MPI_File_open
+         MPI     13,200     400    0.15     0.4         373.07  MPI_Bcast
+         MPI     12,000     900    0.01     0.0          13.58  MPI_File_set_view
+         MPI      9,702      99    0.00     0.0          42.76  MPI_File_read_at
+         MPI      8,200     400    0.44     1.2        1106.08  MPI_File_close
+         MPI      2,448     204    0.00     0.0           0.47  MPI_Comm_size
+         COM      2,400     200    0.24     0.6        1175.33  void output(double*, double)
+         MPI      2,400     200    0.00     0.0           1.78  MPI_File_get_info
+         MPI         66       2    0.00     0.0          44.84  MPI_Barrier
+         COM         48       4    0.00     0.0        1153.32  void reductions(double&, double&)
+      SCOREP         41       2    0.00     0.0         374.32  mpi
+         COM         24       2    0.00     0.0         681.32  int main(int, char**)
+         COM         24       2    0.00     0.0         163.26  void finalize()
+         COM         24       2    0.02     0.1       11401.07  void init(int*, char***)
+         USR         24       2    0.00     0.0           2.89  double dmin(double, double)
+         MPI         24       2    0.00     0.0          35.82  MPI_Finalize
+         MPI         24       2    1.64     4.5      818817.58  MPI_Init

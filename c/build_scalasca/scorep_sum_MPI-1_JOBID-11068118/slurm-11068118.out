@@ -1,0 +1,125 @@
+Cluster configuration:
+===
+Partition:  sequana_cpu_dev
+Number of nodes:  1
+Number of MPI processes:  1  ( 1  nodes)
+Number of MPI processes per node: 
+Number of threads per MPI process: 
+NPB Benchmark: 
+Bechmark class problem: 
+ModuleCmd_Load.c(213):ERROR:105: Unable to locate a modulefile for 'sequana/current'
+S=C=A=N: Scalasca 2.6 runtime summarization
+S=C=A=N: ./scorep_mpi_1_sum experiment archive
+S=C=A=N: Thu Dec 14 13:57:07 2023: Collect start
+/scratch/app/openmpi/4.1.2_gnu+cuda-11.2/bin/mpirun -n 1 ./mpi
+nx_glob, nz_glob: 200 100
+dx,dz: 100.000000 100.000000
+dt: 0.333333
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+CPU Time: 31.2033 sec
+d_mass: 2.511446e-14
+d_te:   3.600774e-08
+S=C=A=N: Thu Dec 14 13:57:45 2023: Collect done (status=0) 38s
+S=C=A=N: ./scorep_mpi_1_sum complete.
+INFO: Post-processing runtime summarization report (profile.cubex)...
+/scratch/cenapadrjsd/rpsouto/spack/sequana/v0.17.1/opt/spack/linux-rhel7-skylake_avx512/gcc-9.3.0/scorep-7.0-xse3pt3qwnmogutgkseli27lkhgsxzu2/bin/scorep-score  -r ./scorep_sum_MPI-1_JOBID-11068118/profile.cubex > ./scorep_sum_MPI-1_JOBID-11068118/scorep.score
+INFO: Score report written to ./scorep_sum_MPI-1_JOBID-11068118/scorep.score

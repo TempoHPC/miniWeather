@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/prj/cenapadrj/ifreitas/Documentos/miniWeather/c/miniWeather_serial.cpp" "CMakeFiles/serial.dir/miniWeather_serial.cpp.o" "gcc" "CMakeFiles/serial.dir/miniWeather_serial.cpp.o.d"
+  "/scratch/cenapadrjsd/isabel.barboza/miniWeather/c/miniWeather_serial.cpp" "CMakeFiles/serial.dir/miniWeather_serial.cpp.o" "gcc" "CMakeFiles/serial.dir/miniWeather_serial.cpp.o.d"
   )
 
 # Targets to which this target links.

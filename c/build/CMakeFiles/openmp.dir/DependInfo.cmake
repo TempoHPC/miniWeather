@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/prj/cenapadrj/ifreitas/Documentos/miniWeather/c/miniWeather_mpi_openmp.cpp" "CMakeFiles/openmp.dir/miniWeather_mpi_openmp.cpp.o" "gcc" "CMakeFiles/openmp.dir/miniWeather_mpi_openmp.cpp.o.d"
+  "/scratch/cenapadrjsd/isabel.barboza/miniWeather/c/miniWeather_mpi_openmp.cpp" "CMakeFiles/openmp.dir/miniWeather_mpi_openmp.cpp.o" "gcc" "CMakeFiles/openmp.dir/miniWeather_mpi_openmp.cpp.o.d"
   )
 
 # Targets to which this target links.

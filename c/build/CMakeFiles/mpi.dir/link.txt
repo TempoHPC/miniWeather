@@ -1,1 +1,1 @@
-/usr/bin/mpic++ -Ofast -march=native -DNO_INFORM -std=c++11 -rdynamic CMakeFiles/mpi.dir/miniWeather_mpi.cpp.o -o mpi  -lpnetcdf 
+/scratch/app/openmpi/4.1.2_gnu+cuda-11.2/bin/mpic++ -Ofast -march=native -DNO_INFORM -std=c++11 -L/scratch/app/gcc/9.3/lib64 -L/scratch/app/gcc/9.3/lib -L/scratch/app/xpmem/2.6.5/lib -L/usr/local/cuda-11.2/lib64 -L/scratch/app/ucx/1.13+cuda-11.2/lib -L scorep /scratch/app/openmpi/4.1.2_gnu+cuda-11.2/lib -L/scratch/app/python/3.9.1/lib/python3.9 -L/scratch/app/python/3.9.1/lib -rdynamic CMakeFiles/mpi.dir/miniWeather_mpi.cpp.o -o mpi  -lpnetcdf 

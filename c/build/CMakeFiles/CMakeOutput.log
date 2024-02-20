@@ -1,6 +1,6 @@
-The system is: Linux - 6.2.0-32-generic - x86_64
+The system is: Linux - 3.10.0-1160.49.1.el7.x86_64 - x86_64
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-Compiler: /usr/bin/mpic++ 
+Compiler: /scratch/app/openmpi/4.1.2_gnu+cuda-11.2/bin/mpic++ 
 Build flags: 
 Id flags:  
 
@@ -10,234 +10,233 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/prj/cenapadrj/ifreitas/Documentos/miniWeather/c/build/CMakeFiles/3.22.1/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/scratch/cenapadrjsd/isabel.barboza/miniWeather/c/build/CMakeFiles/3.23.2/CompilerIdCXX/a.out"
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /prj/cenapadrj/ifreitas/Documentos/miniWeather/c/build/CMakeFiles/CMakeTmp
+Change Dir: /scratch/cenapadrjsd/isabel.barboza/miniWeather/c/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_1ba93/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_1ba93.dir/build.make CMakeFiles/cmTC_1ba93.dir/build
-gmake[1]: Entering directory '/prj/cenapadrj/ifreitas/Documentos/miniWeather/c/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_1ba93.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/mpic++   -v -o CMakeFiles/cmTC_1ba93.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f21e0/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f21e0.dir/build.make CMakeFiles/cmTC_f21e0.dir/build
+gmake[1]: Entering directory `/scratch/cenapadrjsd/isabel.barboza/miniWeather/c/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f21e0.dir/CMakeCXXCompilerABI.cpp.o
+/scratch/app/openmpi/4.1.2_gnu+cuda-11.2/bin/mpic++   -v -o CMakeFiles/cmTC_f21e0.dir/CMakeCXXCompilerABI.cpp.o -c /scratch/app/cmake/3.23.2/share/cmake-3.23/Modules/CMakeCXXCompilerABI.cpp
 Using built-in specs.
-COLLECT_GCC=/usr/bin/g++
-OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
-OFFLOAD_TARGET_DEFAULT=1
-Target: x86_64-linux-gnu
-Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+COLLECT_GCC=/scratch/app/gcc/9.3/bin/g++
+Target: x86_64-pc-linux-gnu
+Configured with: ./configure --prefix=/scratch/app/gcc/9.3 --disable-multilib --enable-threads --with-system-zlib --enable-languages=c,c++,d,fortran,objc,obj-c++ --enable-lto --enable-bootstrap
 Thread model: posix
-Supported LTO compression algorithms: zlib zstd
-gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) 
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_1ba93.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_1ba93.dir/'
- /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus -quiet -v -I /usr/lib/x86_64-linux-gnu/openmpi/include -I /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_1ba93.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccSMQZpL.s
-GNU C++17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)
-	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
-
+gcc version 9.3.0 (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f21e0.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-I' '/scratch/app/openmpi/4.1.2_gnu+cuda-11.2/include' '-pthread' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /scratch/app/gcc/9.3/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/cc1plus -quiet -v -I /scratch/app/openmpi/4.1.2_gnu+cuda-11.2/include -D_GNU_SOURCE -D_REENTRANT /scratch/app/cmake/3.23.2/share/cmake-3.23/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_f21e0.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/ccxC4IDD.s
+GNU C++14 (GCC) version 9.3.0 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 9.3.0, GMP version 6.0.0, MPFR version 3.1.1, MPC version 1.0.1, isl version none
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/11"
-ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
-ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/include-fixed"
-ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../x86_64-pc-linux-gnu/include"
 #include "..." search starts here:
 #include <...> search starts here:
- /usr/lib/x86_64-linux-gnu/openmpi/include
- /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi
- /usr/include/c++/11
- /usr/include/x86_64-linux-gnu/c++/11
- /usr/include/c++/11/backward
- /usr/lib/gcc/x86_64-linux-gnu/11/include
+ /scratch/app/openmpi/4.1.2_gnu+cuda-11.2/include
+ /scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../include/c++/9.3.0
+ /scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../include/c++/9.3.0/x86_64-pc-linux-gnu
+ /scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../include/c++/9.3.0/backward
+ /scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0/include
  /usr/local/include
- /usr/include/x86_64-linux-gnu
+ /scratch/app/gcc/9.3/include
+ /scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0/include-fixed
  /usr/include
 End of search list.
-GNU C++17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)
-	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
-
+GNU C++14 (GCC) version 9.3.0 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 9.3.0, GMP version 6.0.0, MPFR version 3.1.1, MPC version 1.0.1, isl version none
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-Compiler executable checksum: d591828bb4d392ae8b7b160e5bb0b95f
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_1ba93.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_1ba93.dir/'
- as -v -I /usr/lib/x86_64-linux-gnu/openmpi/include -I /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi --64 -o CMakeFiles/cmTC_1ba93.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccSMQZpL.s
-GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38
-COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
-LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_1ba93.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_1ba93.dir/CMakeCXXCompilerABI.cpp.'
-Linking CXX executable cmTC_1ba93
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1ba93.dir/link.txt --verbose=1
-/usr/bin/mpic++  -v -rdynamic CMakeFiles/cmTC_1ba93.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_1ba93 
+Compiler executable checksum: cfb7494f52e739d0cbb6184fa988cf4a
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f21e0.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-I' '/scratch/app/openmpi/4.1.2_gnu+cuda-11.2/include' '-pthread' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ as -v -I /scratch/app/openmpi/4.1.2_gnu+cuda-11.2/include --64 -o CMakeFiles/cmTC_f21e0.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccxC4IDD.s
+GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-44.base.el7_9.1
+COMPILER_PATH=/scratch/app/gcc/9.3/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/:/scratch/app/gcc/9.3/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/:/scratch/app/gcc/9.3/libexec/gcc/x86_64-pc-linux-gnu/:/scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0/:/scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/
+LIBRARY_PATH=/scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0/:/scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f21e0.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-I' '/scratch/app/openmpi/4.1.2_gnu+cuda-11.2/include' '-pthread' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+Linking CXX executable cmTC_f21e0
+/scratch/app/cmake/3.23.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f21e0.dir/link.txt --verbose=1
+/scratch/app/openmpi/4.1.2_gnu+cuda-11.2/bin/mpic++ -L/scratch/app/gcc/9.3/lib64 -L/scratch/app/gcc/9.3/lib -L/scratch/app/xpmem/2.6.5/lib -L/usr/local/cuda-11.2/lib64 -L/scratch/app/ucx/1.13+cuda-11.2/lib -L/scratch/app/openmpi/4.1.2_gnu+cuda-11.2/lib -L/scratch/app/python/3.9.1/lib/python3.9 -L/scratch/app/python/3.9.1/lib -v -rdynamic CMakeFiles/cmTC_f21e0.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_f21e0 
 Using built-in specs.
-COLLECT_GCC=/usr/bin/g++
-COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper
-OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
-OFFLOAD_TARGET_DEFAULT=1
-Target: x86_64-linux-gnu
-Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+COLLECT_GCC=/scratch/app/gcc/9.3/bin/g++
+COLLECT_LTO_WRAPPER=/scratch/app/gcc/9.3/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/lto-wrapper
+Target: x86_64-pc-linux-gnu
+Configured with: ./configure --prefix=/scratch/app/gcc/9.3 --disable-multilib --enable-threads --with-system-zlib --enable-languages=c,c++,d,fortran,objc,obj-c++ --enable-lto --enable-bootstrap
 Thread model: posix
-Supported LTO compression algorithms: zlib zstd
-gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) 
-COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
-LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_1ba93' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi' '-L/usr/lib/x86_64-linux-gnu/openmpi/lib' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_1ba93.'
- /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccndFhQd.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_1ba93 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/x86_64-linux-gnu/openmpi/lib -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_1ba93.dir/CMakeCXXCompilerABI.cpp.o -lmpi_cxx -lmpi -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_1ba93' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi' '-L/usr/lib/x86_64-linux-gnu/openmpi/lib' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_1ba93.'
-gmake[1]: Leaving directory '/prj/cenapadrj/ifreitas/Documentos/miniWeather/c/build/CMakeFiles/CMakeTmp'
+gcc version 9.3.0 (GCC) 
+COMPILER_PATH=/scratch/app/gcc/9.3/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/:/scratch/app/gcc/9.3/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/:/scratch/app/gcc/9.3/libexec/gcc/x86_64-pc-linux-gnu/:/scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0/:/scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/
+LIBRARY_PATH=/scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0/:/scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-L/scratch/app/gcc/9.3/lib64' '-L/scratch/app/gcc/9.3/lib' '-L/scratch/app/xpmem/2.6.5/lib' '-L/usr/local/cuda-11.2/lib64' '-L/scratch/app/ucx/1.13+cuda-11.2/lib' '-L/scratch/app/openmpi/4.1.2_gnu+cuda-11.2/lib' '-L/scratch/app/python/3.9.1/lib/python3.9' '-L/scratch/app/python/3.9.1/lib' '-v' '-rdynamic' '-o' 'cmTC_f21e0' '-I' '/scratch/app/openmpi/4.1.2_gnu+cuda-11.2/include' '-pthread' '-L/scratch/app/openmpi/4.1.2_gnu+cuda-11.2/lib' '-L/scratch/app/ucx/1.13+cuda-11.2/lib' '-L/scratch/app/xpmem/2.6.5/lib' '-L/usr/lib64' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /scratch/app/gcc/9.3/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/collect2 -plugin /scratch/app/gcc/9.3/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/liblto_plugin.so -plugin-opt=/scratch/app/gcc/9.3/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccHiDylG.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_f21e0 /lib/../lib64/crt1.o /lib/../lib64/crti.o /scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0/crtbegin.o -L/scratch/app/gcc/9.3/lib64 -L/scratch/app/gcc/9.3/lib -L/scratch/app/xpmem/2.6.5/lib -L/usr/local/cuda-11.2/lib64 -L/scratch/app/ucx/1.13+cuda-11.2/lib -L/scratch/app/openmpi/4.1.2_gnu+cuda-11.2/lib -L/scratch/app/python/3.9.1/lib/python3.9 -L/scratch/app/python/3.9.1/lib -L/scratch/app/openmpi/4.1.2_gnu+cuda-11.2/lib -L/scratch/app/ucx/1.13+cuda-11.2/lib -L/scratch/app/xpmem/2.6.5/lib -L/usr/lib64 -L/scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0 -L/scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../.. CMakeFiles/cmTC_f21e0.dir/CMakeCXXCompilerABI.cpp.o -rpath /scratch/app/openmpi/4.1.2_gnu+cuda-11.2/lib -rpath /scratch/app/ucx/1.13+cuda-11.2/lib -rpath /scratch/app/xpmem/2.6.5/lib -rpath /usr/lib64 --enable-new-dtags -lmpi_cxx -lmpi -lstdc++ -lm -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0/crtend.o /lib/../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-L/scratch/app/gcc/9.3/lib64' '-L/scratch/app/gcc/9.3/lib' '-L/scratch/app/xpmem/2.6.5/lib' '-L/usr/local/cuda-11.2/lib64' '-L/scratch/app/ucx/1.13+cuda-11.2/lib' '-L/scratch/app/openmpi/4.1.2_gnu+cuda-11.2/lib' '-L/scratch/app/python/3.9.1/lib/python3.9' '-L/scratch/app/python/3.9.1/lib' '-v' '-rdynamic' '-o' 'cmTC_f21e0' '-I' '/scratch/app/openmpi/4.1.2_gnu+cuda-11.2/include' '-pthread' '-L/scratch/app/openmpi/4.1.2_gnu+cuda-11.2/lib' '-L/scratch/app/ucx/1.13+cuda-11.2/lib' '-L/scratch/app/xpmem/2.6.5/lib' '-L/usr/lib64' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+gmake[1]: Leaving directory `/scratch/cenapadrjsd/isabel.barboza/miniWeather/c/build/CMakeFiles/CMakeTmp'
 
 
 
 Parsed CXX implicit include dir info from above output: rv=done
   found start of include info
   found start of implicit include info
-    add: [/usr/lib/x86_64-linux-gnu/openmpi/include]
-    add: [/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi]
-    add: [/usr/include/c++/11]
-    add: [/usr/include/x86_64-linux-gnu/c++/11]
-    add: [/usr/include/c++/11/backward]
-    add: [/usr/lib/gcc/x86_64-linux-gnu/11/include]
+    add: [/scratch/app/openmpi/4.1.2_gnu+cuda-11.2/include]
+    add: [/scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../include/c++/9.3.0]
+    add: [/scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../include/c++/9.3.0/x86_64-pc-linux-gnu]
+    add: [/scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../include/c++/9.3.0/backward]
+    add: [/scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0/include]
     add: [/usr/local/include]
-    add: [/usr/include/x86_64-linux-gnu]
+    add: [/scratch/app/gcc/9.3/include]
+    add: [/scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0/include-fixed]
     add: [/usr/include]
   end of search list found
-  collapse include dir [/usr/lib/x86_64-linux-gnu/openmpi/include] ==> [/usr/lib/x86_64-linux-gnu/openmpi/include]
-  collapse include dir [/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi] ==> [/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi]
-  collapse include dir [/usr/include/c++/11] ==> [/usr/include/c++/11]
-  collapse include dir [/usr/include/x86_64-linux-gnu/c++/11] ==> [/usr/include/x86_64-linux-gnu/c++/11]
-  collapse include dir [/usr/include/c++/11/backward] ==> [/usr/include/c++/11/backward]
-  collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/11/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/11/include]
+  collapse include dir [/scratch/app/openmpi/4.1.2_gnu+cuda-11.2/include] ==> [/scratch/app/openmpi/4.1.2_gnu+cuda-11.2/include]
+  collapse include dir [/scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../include/c++/9.3.0] ==> [/scratch/app/gcc/9.3/include/c++/9.3.0]
+  collapse include dir [/scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../include/c++/9.3.0/x86_64-pc-linux-gnu] ==> [/scratch/app/gcc/9.3/include/c++/9.3.0/x86_64-pc-linux-gnu]
+  collapse include dir [/scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../include/c++/9.3.0/backward] ==> [/scratch/app/gcc/9.3/include/c++/9.3.0/backward]
+  collapse include dir [/scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0/include] ==> [/scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0/include]
   collapse include dir [/usr/local/include] ==> [/usr/local/include]
-  collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+  collapse include dir [/scratch/app/gcc/9.3/include] ==> [/scratch/app/gcc/9.3/include]
+  collapse include dir [/scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0/include-fixed] ==> [/scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0/include-fixed]
   collapse include dir [/usr/include] ==> [/usr/include]
-  implicit include dirs: [/usr/lib/x86_64-linux-gnu/openmpi/include;/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi;/usr/include/c++/11;/usr/include/x86_64-linux-gnu/c++/11;/usr/include/c++/11/backward;/usr/lib/gcc/x86_64-linux-gnu/11/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+  implicit include dirs: [/scratch/app/openmpi/4.1.2_gnu+cuda-11.2/include;/scratch/app/gcc/9.3/include/c++/9.3.0;/scratch/app/gcc/9.3/include/c++/9.3.0/x86_64-pc-linux-gnu;/scratch/app/gcc/9.3/include/c++/9.3.0/backward;/scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0/include;/usr/local/include;/scratch/app/gcc/9.3/include;/scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0/include-fixed;/usr/include]
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /prj/cenapadrj/ifreitas/Documentos/miniWeather/c/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /scratch/cenapadrjsd/isabel.barboza/miniWeather/c/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_1ba93/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_1ba93.dir/build.make CMakeFiles/cmTC_1ba93.dir/build]
-  ignore line: [gmake[1]: Entering directory '/prj/cenapadrj/ifreitas/Documentos/miniWeather/c/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_1ba93.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/mpic++   -v -o CMakeFiles/cmTC_1ba93.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f21e0/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f21e0.dir/build.make CMakeFiles/cmTC_f21e0.dir/build]
+  ignore line: [gmake[1]: Entering directory `/scratch/cenapadrjsd/isabel.barboza/miniWeather/c/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_f21e0.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/scratch/app/openmpi/4.1.2_gnu+cuda-11.2/bin/mpic++   -v -o CMakeFiles/cmTC_f21e0.dir/CMakeCXXCompilerABI.cpp.o -c /scratch/app/cmake/3.23.2/share/cmake-3.23/Modules/CMakeCXXCompilerABI.cpp]
   ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=/usr/bin/g++]
-  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
-  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
-  ignore line: [Target: x86_64-linux-gnu]
-  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+  ignore line: [COLLECT_GCC=/scratch/app/gcc/9.3/bin/g++]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: ./configure --prefix=/scratch/app/gcc/9.3 --disable-multilib --enable-threads --with-system-zlib --enable-languages=c c++ d fortran objc obj-c++ --enable-lto --enable-bootstrap]
   ignore line: [Thread model: posix]
-  ignore line: [Supported LTO compression algorithms: zlib zstd]
-  ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_1ba93.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_1ba93.dir/']
-  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus -quiet -v -I /usr/lib/x86_64-linux-gnu/openmpi/include -I /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_1ba93.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccSMQZpL.s]
-  ignore line: [GNU C++17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)]
-  ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
-  ignore line: []
+  ignore line: [gcc version 9.3.0 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f21e0.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-I' '/scratch/app/openmpi/4.1.2_gnu+cuda-11.2/include' '-pthread' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /scratch/app/gcc/9.3/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/cc1plus -quiet -v -I /scratch/app/openmpi/4.1.2_gnu+cuda-11.2/include -D_GNU_SOURCE -D_REENTRANT /scratch/app/cmake/3.23.2/share/cmake-3.23/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_f21e0.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/ccxC4IDD.s]
+  ignore line: [GNU C++14 (GCC) version 9.3.0 (x86_64-pc-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.3.0  GMP version 6.0.0  MPFR version 3.1.1  MPC version 1.0.1  isl version none]
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-  ignore line: [ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/11"]
-  ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
-  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/include-fixed"]
-  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"]
+  ignore line: [ignoring nonexistent directory "/scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../x86_64-pc-linux-gnu/include"]
   ignore line: [#include "..." search starts here:]
   ignore line: [#include <...> search starts here:]
-  ignore line: [ /usr/lib/x86_64-linux-gnu/openmpi/include]
-  ignore line: [ /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi]
-  ignore line: [ /usr/include/c++/11]
-  ignore line: [ /usr/include/x86_64-linux-gnu/c++/11]
-  ignore line: [ /usr/include/c++/11/backward]
-  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/include]
+  ignore line: [ /scratch/app/openmpi/4.1.2_gnu+cuda-11.2/include]
+  ignore line: [ /scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../include/c++/9.3.0]
+  ignore line: [ /scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../include/c++/9.3.0/x86_64-pc-linux-gnu]
+  ignore line: [ /scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../include/c++/9.3.0/backward]
+  ignore line: [ /scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0/include]
   ignore line: [ /usr/local/include]
-  ignore line: [ /usr/include/x86_64-linux-gnu]
+  ignore line: [ /scratch/app/gcc/9.3/include]
+  ignore line: [ /scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0/include-fixed]
   ignore line: [ /usr/include]
   ignore line: [End of search list.]
-  ignore line: [GNU C++17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)]
-  ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
-  ignore line: []
+  ignore line: [GNU C++14 (GCC) version 9.3.0 (x86_64-pc-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.3.0  GMP version 6.0.0  MPFR version 3.1.1  MPC version 1.0.1  isl version none]
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-  ignore line: [Compiler executable checksum: d591828bb4d392ae8b7b160e5bb0b95f]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_1ba93.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_1ba93.dir/']
-  ignore line: [ as -v -I /usr/lib/x86_64-linux-gnu/openmpi/include -I /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi --64 -o CMakeFiles/cmTC_1ba93.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccSMQZpL.s]
-  ignore line: [GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38]
-  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_1ba93.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_1ba93.dir/CMakeCXXCompilerABI.cpp.']
-  ignore line: [Linking CXX executable cmTC_1ba93]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1ba93.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/mpic++  -v -rdynamic CMakeFiles/cmTC_1ba93.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_1ba93 ]
+  ignore line: [Compiler executable checksum: cfb7494f52e739d0cbb6184fa988cf4a]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f21e0.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-I' '/scratch/app/openmpi/4.1.2_gnu+cuda-11.2/include' '-pthread' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [ as -v -I /scratch/app/openmpi/4.1.2_gnu+cuda-11.2/include --64 -o CMakeFiles/cmTC_f21e0.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccxC4IDD.s]
+  ignore line: [GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-44.base.el7_9.1]
+  ignore line: [COMPILER_PATH=/scratch/app/gcc/9.3/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/:/scratch/app/gcc/9.3/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/:/scratch/app/gcc/9.3/libexec/gcc/x86_64-pc-linux-gnu/:/scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0/:/scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0/:/scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f21e0.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-I' '/scratch/app/openmpi/4.1.2_gnu+cuda-11.2/include' '-pthread' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking CXX executable cmTC_f21e0]
+  ignore line: [/scratch/app/cmake/3.23.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f21e0.dir/link.txt --verbose=1]
+  ignore line: [/scratch/app/openmpi/4.1.2_gnu+cuda-11.2/bin/mpic++ -L/scratch/app/gcc/9.3/lib64 -L/scratch/app/gcc/9.3/lib -L/scratch/app/xpmem/2.6.5/lib -L/usr/local/cuda-11.2/lib64 -L/scratch/app/ucx/1.13+cuda-11.2/lib -L/scratch/app/openmpi/4.1.2_gnu+cuda-11.2/lib -L/scratch/app/python/3.9.1/lib/python3.9 -L/scratch/app/python/3.9.1/lib -v -rdynamic CMakeFiles/cmTC_f21e0.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_f21e0 ]
   ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=/usr/bin/g++]
-  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper]
-  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
-  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
-  ignore line: [Target: x86_64-linux-gnu]
-  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+  ignore line: [COLLECT_GCC=/scratch/app/gcc/9.3/bin/g++]
+  ignore line: [COLLECT_LTO_WRAPPER=/scratch/app/gcc/9.3/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/lto-wrapper]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: ./configure --prefix=/scratch/app/gcc/9.3 --disable-multilib --enable-threads --with-system-zlib --enable-languages=c c++ d fortran objc obj-c++ --enable-lto --enable-bootstrap]
   ignore line: [Thread model: posix]
-  ignore line: [Supported LTO compression algorithms: zlib zstd]
-  ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) ]
-  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_1ba93' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include' '-I' '/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi' '-L/usr/lib/x86_64-linux-gnu/openmpi/lib' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_1ba93.']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccndFhQd.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_1ba93 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/x86_64-linux-gnu/openmpi/lib -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_1ba93.dir/CMakeCXXCompilerABI.cpp.o -lmpi_cxx -lmpi -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
-    arg [/usr/lib/gcc/x86_64-linux-gnu/11/collect2] ==> ignore
+  ignore line: [gcc version 9.3.0 (GCC) ]
+  ignore line: [COMPILER_PATH=/scratch/app/gcc/9.3/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/:/scratch/app/gcc/9.3/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/:/scratch/app/gcc/9.3/libexec/gcc/x86_64-pc-linux-gnu/:/scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0/:/scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0/:/scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-L/scratch/app/gcc/9.3/lib64' '-L/scratch/app/gcc/9.3/lib' '-L/scratch/app/xpmem/2.6.5/lib' '-L/usr/local/cuda-11.2/lib64' '-L/scratch/app/ucx/1.13+cuda-11.2/lib' '-L/scratch/app/openmpi/4.1.2_gnu+cuda-11.2/lib' '-L/scratch/app/python/3.9.1/lib/python3.9' '-L/scratch/app/python/3.9.1/lib' '-v' '-rdynamic' '-o' 'cmTC_f21e0' '-I' '/scratch/app/openmpi/4.1.2_gnu+cuda-11.2/include' '-pthread' '-L/scratch/app/openmpi/4.1.2_gnu+cuda-11.2/lib' '-L/scratch/app/ucx/1.13+cuda-11.2/lib' '-L/scratch/app/xpmem/2.6.5/lib' '-L/usr/lib64' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /scratch/app/gcc/9.3/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/collect2 -plugin /scratch/app/gcc/9.3/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/liblto_plugin.so -plugin-opt=/scratch/app/gcc/9.3/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccHiDylG.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_f21e0 /lib/../lib64/crt1.o /lib/../lib64/crti.o /scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0/crtbegin.o -L/scratch/app/gcc/9.3/lib64 -L/scratch/app/gcc/9.3/lib -L/scratch/app/xpmem/2.6.5/lib -L/usr/local/cuda-11.2/lib64 -L/scratch/app/ucx/1.13+cuda-11.2/lib -L/scratch/app/openmpi/4.1.2_gnu+cuda-11.2/lib -L/scratch/app/python/3.9.1/lib/python3.9 -L/scratch/app/python/3.9.1/lib -L/scratch/app/openmpi/4.1.2_gnu+cuda-11.2/lib -L/scratch/app/ucx/1.13+cuda-11.2/lib -L/scratch/app/xpmem/2.6.5/lib -L/usr/lib64 -L/scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0 -L/scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../.. CMakeFiles/cmTC_f21e0.dir/CMakeCXXCompilerABI.cpp.o -rpath /scratch/app/openmpi/4.1.2_gnu+cuda-11.2/lib -rpath /scratch/app/ucx/1.13+cuda-11.2/lib -rpath /scratch/app/xpmem/2.6.5/lib -rpath /usr/lib64 --enable-new-dtags -lmpi_cxx -lmpi -lstdc++ -lm -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0/crtend.o /lib/../lib64/crtn.o]
+    arg [/scratch/app/gcc/9.3/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/collect2] ==> ignore
     arg [-plugin] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so] ==> ignore
-    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccndFhQd.res] ==> ignore
+    arg [/scratch/app/gcc/9.3/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/scratch/app/gcc/9.3/libexec/gcc/x86_64-pc-linux-gnu/9.3.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccHiDylG.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-    arg [--build-id] ==> ignore
     arg [--eh-frame-hdr] ==> ignore
     arg [-m] ==> ignore
     arg [elf_x86_64] ==> ignore
-    arg [--hash-style=gnu] ==> ignore
-    arg [--as-needed] ==> ignore
     arg [-export-dynamic] ==> ignore
     arg [-dynamic-linker] ==> ignore
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
-    arg [-pie] ==> ignore
-    arg [-znow] ==> ignore
-    arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_1ba93] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o]
-    arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o]
-    arg [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o]
-    arg [-L/usr/lib/x86_64-linux-gnu/openmpi/lib] ==> dir [/usr/lib/x86_64-linux-gnu/openmpi/lib]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/11] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib]
-    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
-    arg [-L/lib/../lib] ==> dir [/lib/../lib]
-    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
-    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../..]
-    arg [CMakeFiles/cmTC_1ba93.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [cmTC_f21e0] ==> ignore
+    arg [/lib/../lib64/crt1.o] ==> obj [/lib/../lib64/crt1.o]
+    arg [/lib/../lib64/crti.o] ==> obj [/lib/../lib64/crti.o]
+    arg [/scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0/crtbegin.o] ==> obj [/scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0/crtbegin.o]
+    arg [-L/scratch/app/gcc/9.3/lib64] ==> dir [/scratch/app/gcc/9.3/lib64]
+    arg [-L/scratch/app/gcc/9.3/lib] ==> dir [/scratch/app/gcc/9.3/lib]
+    arg [-L/scratch/app/xpmem/2.6.5/lib] ==> dir [/scratch/app/xpmem/2.6.5/lib]
+    arg [-L/usr/local/cuda-11.2/lib64] ==> dir [/usr/local/cuda-11.2/lib64]
+    arg [-L/scratch/app/ucx/1.13+cuda-11.2/lib] ==> dir [/scratch/app/ucx/1.13+cuda-11.2/lib]
+    arg [-L/scratch/app/openmpi/4.1.2_gnu+cuda-11.2/lib] ==> dir [/scratch/app/openmpi/4.1.2_gnu+cuda-11.2/lib]
+    arg [-L/scratch/app/python/3.9.1/lib/python3.9] ==> dir [/scratch/app/python/3.9.1/lib/python3.9]
+    arg [-L/scratch/app/python/3.9.1/lib] ==> dir [/scratch/app/python/3.9.1/lib]
+    arg [-L/scratch/app/openmpi/4.1.2_gnu+cuda-11.2/lib] ==> dir [/scratch/app/openmpi/4.1.2_gnu+cuda-11.2/lib]
+    arg [-L/scratch/app/ucx/1.13+cuda-11.2/lib] ==> dir [/scratch/app/ucx/1.13+cuda-11.2/lib]
+    arg [-L/scratch/app/xpmem/2.6.5/lib] ==> dir [/scratch/app/xpmem/2.6.5/lib]
+    arg [-L/usr/lib64] ==> dir [/usr/lib64]
+    arg [-L/scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0] ==> dir [/scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0]
+    arg [-L/scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../lib64] ==> dir [/scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../..] ==> dir [/scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../..]
+    arg [CMakeFiles/cmTC_f21e0.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-rpath] ==> ignore
+    arg [/scratch/app/openmpi/4.1.2_gnu+cuda-11.2/lib] ==> ignore
+    arg [-rpath] ==> ignore
+    arg [/scratch/app/ucx/1.13+cuda-11.2/lib] ==> ignore
+    arg [-rpath] ==> ignore
+    arg [/scratch/app/xpmem/2.6.5/lib] ==> ignore
+    arg [-rpath] ==> ignore
+    arg [/usr/lib64] ==> ignore
+    arg [--enable-new-dtags] ==> ignore
     arg [-lmpi_cxx] ==> lib [mpi_cxx]
     arg [-lmpi] ==> lib [mpi]
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
     arg [-lgcc] ==> lib [gcc]
+    arg [-lpthread] ==> lib [pthread]
     arg [-lc] ==> lib [c]
     arg [-lgcc_s] ==> lib [gcc_s]
     arg [-lgcc] ==> lib [gcc]
-    arg [/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o]
-    arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
-  collapse obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
-  collapse obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
-  collapse obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
-  collapse library dir [/usr/lib/x86_64-linux-gnu/openmpi/lib] ==> [/usr/lib/x86_64-linux-gnu/openmpi/lib]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11] ==> [/usr/lib/gcc/x86_64-linux-gnu/11]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib] ==> [/usr/lib]
-  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
-  collapse library dir [/lib/../lib] ==> [/lib]
-  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
-  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../..] ==> [/usr/lib]
-  implicit libs: [mpi_cxx;mpi;stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
-  implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
-  implicit dirs: [/usr/lib/x86_64-linux-gnu/openmpi/lib;/usr/lib/gcc/x86_64-linux-gnu/11;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+    arg [/scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0/crtend.o] ==> obj [/scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0/crtend.o]
+    arg [/lib/../lib64/crtn.o] ==> obj [/lib/../lib64/crtn.o]
+  collapse obj [/lib/../lib64/crt1.o] ==> [/lib64/crt1.o]
+  collapse obj [/lib/../lib64/crti.o] ==> [/lib64/crti.o]
+  collapse obj [/lib/../lib64/crtn.o] ==> [/lib64/crtn.o]
+  collapse library dir [/scratch/app/gcc/9.3/lib64] ==> [/scratch/app/gcc/9.3/lib64]
+  collapse library dir [/scratch/app/gcc/9.3/lib] ==> [/scratch/app/gcc/9.3/lib]
+  collapse library dir [/scratch/app/xpmem/2.6.5/lib] ==> [/scratch/app/xpmem/2.6.5/lib]
+  collapse library dir [/usr/local/cuda-11.2/lib64] ==> [/usr/local/cuda-11.2/lib64]
+  collapse library dir [/scratch/app/ucx/1.13+cuda-11.2/lib] ==> [/scratch/app/ucx/1.13+cuda-11.2/lib]
+  collapse library dir [/scratch/app/openmpi/4.1.2_gnu+cuda-11.2/lib] ==> [/scratch/app/openmpi/4.1.2_gnu+cuda-11.2/lib]
+  collapse library dir [/scratch/app/python/3.9.1/lib/python3.9] ==> [/scratch/app/python/3.9.1/lib/python3.9]
+  collapse library dir [/scratch/app/python/3.9.1/lib] ==> [/scratch/app/python/3.9.1/lib]
+  collapse library dir [/scratch/app/openmpi/4.1.2_gnu+cuda-11.2/lib] ==> [/scratch/app/openmpi/4.1.2_gnu+cuda-11.2/lib]
+  collapse library dir [/scratch/app/ucx/1.13+cuda-11.2/lib] ==> [/scratch/app/ucx/1.13+cuda-11.2/lib]
+  collapse library dir [/scratch/app/xpmem/2.6.5/lib] ==> [/scratch/app/xpmem/2.6.5/lib]
+  collapse library dir [/usr/lib64] ==> [/usr/lib64]
+  collapse library dir [/scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0] ==> [/scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0]
+  collapse library dir [/scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../lib64] ==> [/scratch/app/gcc/9.3/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../..] ==> [/scratch/app/gcc/9.3/lib]
+  implicit libs: [mpi_cxx;mpi;stdc++;m;gcc_s;gcc;pthread;c;gcc_s;gcc]
+  implicit objs: [/lib64/crt1.o;/lib64/crti.o;/scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0/crtbegin.o;/scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0/crtend.o;/lib64/crtn.o]
+  implicit dirs: [/scratch/app/gcc/9.3/lib64;/scratch/app/gcc/9.3/lib;/scratch/app/xpmem/2.6.5/lib;/usr/local/cuda-11.2/lib64;/scratch/app/ucx/1.13+cuda-11.2/lib;/scratch/app/openmpi/4.1.2_gnu+cuda-11.2/lib;/scratch/app/python/3.9.1/lib/python3.9;/scratch/app/python/3.9.1/lib;/usr/lib64;/scratch/app/gcc/9.3/lib/gcc/x86_64-pc-linux-gnu/9.3.0;/lib64]
   implicit fwks: []
 
 

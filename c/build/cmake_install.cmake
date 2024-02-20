@@ -1,4 +1,4 @@
-# Install script for directory: /prj/cenapadrj/ifreitas/Documentos/miniWeather/c
+# Install script for directory: /scratch/cenapadrjsd/isabel.barboza/miniWeather/c
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -29,7 +29,7 @@ endif()
 
 # Install shared libraries without execute permission?
 if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  set(CMAKE_INSTALL_SO_NO_EXE "1")
+  set(CMAKE_INSTALL_SO_NO_EXE "0")
 endif()
 
 # Is this installation the result of a crosscompile?
@@ -39,7 +39,7 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/usr/bin/objdump")
+  set(CMAKE_OBJDUMP "/scratch/cenapadrjsd/rpsouto/spack/sequana/v0.17.1/opt/spack/linux-rhel7-skylake_avx512/gcc-8.3.0/binutils-2.37-yvsz33uxeihxwwbvhvq7yvwjlktnhwbd/bin/objdump")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/prj/cenapadrj/ifreitas/Documentos/miniWeather/c/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/scratch/cenapadrjsd/isabel.barboza/miniWeather/c/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

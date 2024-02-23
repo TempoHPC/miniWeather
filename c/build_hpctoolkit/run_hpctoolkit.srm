@@ -38,8 +38,11 @@ spackdir=${workdir}/spack/${partition}/${version}
 
 export SPACK_USER_CONFIG_PATH=${workdir}/.spack/${partition}/${version}
 
-spack load scalasca
+
+
+spack load hpctoolkit
 spack load parallel-netcdf
+
 
 DIR=$PWD
 
@@ -52,13 +55,27 @@ cd $DIR
 
 export OMPI_MCA_opal_warn_on_missing_libcuda=0
 
-scalasca -analyze -s mpirun -n $SLURM_NTASKS $BIN
-#scan -s srun --resv-ports -n $SLURM_NTASKS $BIN
 
-scorepdirorig="scorep_mpi_${SLURM_NTASKS}_sum"
-scorepdirdest="scorep_sum_MPI-${SLURM_NTASKS}_JOBID-${SLURM_JOBID}"
-mv $scorepdirorig $scorepdirdest
-mv slurm-${SLURM_JOBID}.out $scorepdirdest/
+#srun --resv-ports -n $SLURM_NTASKS \
+mpirun -n $SLURM_NTASKS \
+hpcrun -t -e CPUTIME \
+./${executable} 
 
-#pós-processamento contendo análise mais detalhada
-scalasca -examine -s $scorepdirdest
+hpcstruct ${executable}
+
+
+hpcprof \
+ -I ../BT-MZ/+ \
+ -S ${executable}.hpcstruct hpctoolkit-${executable}-measurements-${SLURM_JOBID}
+
+
+hpctoolkitresultdir=profiling/hpctoolkit/NUMNODES-$SLURM_JOB_NUM_NODES/${bench}_${class}_MPI-${SLURM_NTASKS}_OMP-${SLURM_CPUS_PER_TASK}_JOBID-${SLURM_JOBID}
+
+mkdir -p ${hpctoolkitresultdir}
+
+
+mv slurm-${SLURM_JOBID}.out ${hpctoolkitresultdir}/
+mv hpctoolkit-${executable}-database-${SLURM_JOBID} ${hpctoolkitresultdir}/
+mv hpctoolkit-${executable}-measurements-${SLURM_JOBID} ${hpctoolkitresultdir}/
+mv ${executable}.hpcstruct ${hpctoolkitresultdir}/
+

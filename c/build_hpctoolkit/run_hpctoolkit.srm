@@ -6,7 +6,7 @@
 #SBATCH -p sequana_cpu_dev               # target partition
 #SBATCH --threads-per-core=1
 #SBATCH -J miniWeather                       # job name
-#SBATCH --time=00:10:00                 # time limit
+#SBATCH --time=00:20:00                 # time limit
 #SBATCH --exclusive                     # to have exclusive use of your nodes
 
 echo "Cluster configuration:"
@@ -38,15 +38,12 @@ spackdir=${workdir}/spack/${partition}/${version}
 
 export SPACK_USER_CONFIG_PATH=${workdir}/.spack/${partition}/${version}
 
-
-
 spack load hpctoolkit
 spack load parallel-netcdf
 
-
 DIR=$PWD
 
-execfile="mpi"
+executable="mpi"
 BIN=./${execfile}
 
 export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
@@ -55,7 +52,6 @@ cd $DIR
 
 export OMPI_MCA_opal_warn_on_missing_libcuda=0
 
-
 #srun --resv-ports -n $SLURM_NTASKS \
 mpirun -n $SLURM_NTASKS \
 hpcrun -t -e CPUTIME \
@@ -63,16 +59,13 @@ hpcrun -t -e CPUTIME \
 
 hpcstruct ${executable}
 
-
 hpcprof \
- -I ../BT-MZ/+ \
+ -I ../+ \
  -S ${executable}.hpcstruct hpctoolkit-${executable}-measurements-${SLURM_JOBID}
 
-
-hpctoolkitresultdir=profiling/hpctoolkit/NUMNODES-$SLURM_JOB_NUM_NODES/${bench}_${class}_MPI-${SLURM_NTASKS}_OMP-${SLURM_CPUS_PER_TASK}_JOBID-${SLURM_JOBID}
+hpctoolkitresultdir=profiling/hpctoolkit/NUMNODES-$SLURM_JOB_NUM_NODES/MPI-${SLURM_NTASKS}_OMP-${SLURM_CPUS_PER_TASK}_JOBID-${SLURM_JOBID}
 
 mkdir -p ${hpctoolkitresultdir}
-
 
 mv slurm-${SLURM_JOBID}.out ${hpctoolkitresultdir}/
 mv hpctoolkit-${executable}-database-${SLURM_JOBID} ${hpctoolkitresultdir}/

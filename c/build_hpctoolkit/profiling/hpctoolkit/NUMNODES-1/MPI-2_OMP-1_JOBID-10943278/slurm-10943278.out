@@ -1,0 +1,134 @@
+Cluster configuration:
+===
+Partition:  sequana_cpu_dev
+Number of nodes:  1
+Number of MPI processes:  2  ( 1  nodes)
+Number of MPI processes per node: 
+Number of threads per MPI process:  1
+NPB Benchmark: 
+Bechmark class problem: 
+ModuleCmd_Load.c(213):ERROR:105: Unable to locate a modulefile for 'sequana/current'
+nx_glob, nz_glob: 200 100
+dx,dz: 100.000000 100.000000
+dt: 0.333333
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+*** OUTPUT ***
+CPU Time: 16.7687 sec
+d_mass: -3.965442e-15
+d_te:   3.600768e-08
+msg: STRUCTURE: /scratch/cenapadrjsd/isabel.barboza/miniWeather/c/build_hpctoolkit/mpi
+msg: Line map : /scratch/cenapadrjsd/rpsouto/spack/sequana/v0.17.1/opt/spack/linux-rhel7-skylake_avx512/gcc-8.3.0/hpctoolkit-2021.10.15-fuqprrfm6zqhbemvuwxujzsyqd3z6eqf/lib/hpctoolkit/libhpcrun.so
+msg: Line map : /scratch/cenapadrjsd/rpsouto/spack/sequana/v0.17.1/opt/spack/linux-rhel7-skylake_avx512/gcc-8.3.0/hpctoolkit-2021.10.15-fuqprrfm6zqhbemvuwxujzsyqd3z6eqf/lib/hpctoolkit/ext-libs/libmonitor.so.0.0.0
+msg: Line map : /scratch/cenapadrjsd/rpsouto/spack/sequana/v0.17.1/opt/spack/linux-rhel7-skylake_avx512/gcc-9.3.0/parallel-netcdf-1.12.2-wg4ax4dhebj7gzxlyhnm7ywzw6ve53ep/lib/libpnetcdf.so.4.0.2
+msg: Line map : /scratch/app/openmpi/4.1.2_gnu+cuda-11.2/lib/libmpi.so.40.30.2
+msg: Line map : /usr/lib64/libm-2.17.so
+msg: Line map : /usr/lib64/libpthread-2.17.so
+msg: Line map : /usr/lib64/libc-2.17.so
+msg: Line map : /usr/lib64/liblustreapi.so.1.0.0
+msg: Line map : /scratch/app/openmpi/4.1.2_gnu+cuda-11.2/lib/libopen-rte.so.40.30.2
+msg: Line map : /scratch/app/openmpi/4.1.2_gnu+cuda-11.2/lib/libopen-pal.so.40.30.2
+msg: Line map : /scratch/app/ucx/1.13+cuda-11.2/lib/libucp.so.0.0.0
+msg: Line map : /scratch/app/ucx/1.13+cuda-11.2/lib/libuct.so.0.0.0
+msg: Line map : /scratch/app/ucx/1.13+cuda-11.2/lib/libucs.so.0.0.0
+msg: Line map : /usr/lib64/libibverbs.so.1.8.28.0
+msg: Line map : /usr/lib64/libmlx5.so.1.12.28.0
+msg: Line map : /scratch/app/ucx/1.13+cuda-11.2/lib/ucx/libuct_ib.so.0.0.0
+msg: Populating Experiment database: /scratch/cenapadrjsd/isabel.barboza/miniWeather/c/build_hpctoolkit/hpctoolkit-mpi-database-10943278

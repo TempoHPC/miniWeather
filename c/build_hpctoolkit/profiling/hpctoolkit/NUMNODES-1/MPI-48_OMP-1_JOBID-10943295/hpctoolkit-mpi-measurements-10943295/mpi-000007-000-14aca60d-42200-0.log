@@ -1,0 +1,11 @@
+fnbounds: /scratch/cenapadrjsd/rpsouto/spack/sequana/v0.17.1/opt/spack/linux-rhel7-skylake_avx512/gcc-8.3.0/hpctoolkit-2021.10.15-fuqprrfm6zqhbemvuwxujzsyqd3z6eqf/libexec/hpctoolkit/hpcfnbounds2
+MEMORY: segment size: 4.0 meg, num segments: 9, total allocation: 36.0 meg, reclaims: 0
+MEMORY: total freeable: 0.0 meg, total non-freeable: 17.9 meg, malloc failures: 0
+UNWIND ANOMALIES: total: 15525 errant: 0, total-frames: 226232, total-libunwind-fails: 0
+ACC SUMMARY:
+         accelerator trace records: 0 (processed: 0, dropped: 0)
+         accelerator samples: 0 (recorded: 0, dropped: 0)
+SAMPLE ANOMALIES: blocks: 0 (async: 0, dlopen: 0), errors: 0 (segv: 0, soft: 0)
+SUMMARY: samples: 15525 (recorded: 15525, blocked: 0, errant: 0, trolled: 0, yielded: 0),
+         frames: 226232 (trolled: 0)
+         intervals: 2827 (suspicious: 0)

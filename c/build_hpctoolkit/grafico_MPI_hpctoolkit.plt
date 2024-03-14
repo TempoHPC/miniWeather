@@ -15,10 +15,18 @@ set xtics nomirror
 set ylabel "Desempenho"
 set ytics nomirror
 
+# eixo y2 Speedup
+set y2label "Speedup"
+set y2tics nomirror
 
 # espessura da linha
-set style line 1 linewidth 2
+set style line 1 linewidth 4 pointtype 7 linecolor rgb "red"
+set style line 2 linewidth 2 pointtype 5 linecolor rgb "blue"
 
 
 # gráfico de linhas
-plot "tabela_MPI.txt" using 1:2 with linespoint linestyle 1 
+
+plot "desempenho_hpctoolkit.txt" using 1:2 with linespoint linestyle 1 title "Tempo Medido", \
+     "desempenho_hpctoolkit.txt" using 1:3 with linespoint linestyle 2 title "Tempo ideal", \
+     "desempenho_hpctoolkit.txt" using 1:5 with linespoint linestyle 1 title "Speedup Medido" axes x1y2, \
+     "desempenho_hpctoolkit.txt" using 1:4 with linespoint linestyle 2 title "Speedup ideal" axes x1y2

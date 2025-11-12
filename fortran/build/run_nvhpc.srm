@@ -1,0 +1,42 @@
+#!/bin/bash
+#SBATCH --nodes=1                       # here the number of nodes
+#SBATCH --ntasks=1                      # here total number of mpi tasks
+#SBATCH -p sequana_gpu_dev               # target partition
+#SBATCH --cpus-per-task=1
+#SBATCH --threads-per-core=1
+#SBATCH -J miniWeather                       # job name
+#SBATCH --time=00:10:00                 # time limit
+#SBATCH --exclusive                     # to have exclusive use of your nodes
+
+echo "Cluster configuration:"
+echo "==="
+echo "Partition: " $SLURM_JOB_PARTITION
+echo "Number of nodes: " $SLURM_NNODES
+echo "Number of MPI processes: " $SLURM_NTASKS " (" $SLURM_NNODES " nodes)"
+echo "Number of threads per MPI process: " $SLURM_CPUS_PER_TASK
+
+###################################
+#           COMPILER              #
+###################################
+
+source $SLURM_SUBMIT_DIR/env_sdumont_spack.sh
+source $SLURM_SUBMIT_DIR/env_sequana_nvhpc.sh
+
+#export LD_LIBRARY_PATH=/scratch/cenapadrjsd/rpsouto/usr/lib64:$LD_LIBRARY_PATH
+
+export LD_LIBRARY_PATH=$(spack location -i parallel-netcdf@1.12.2%nvhpc@22.11)/lib:$LD_LIBRARY_PATH
+
+executable=${1}
+
+export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
+
+export OMPI_MCA_opal_warn_on_missing_libcuda=0
+
+mpirun -n $SLURM_NTASKS \
+./${executable} 
+
+resultdir=resultdir/${executable}/NUMNODES-${SLURM_JOB_NUM_NODES}/MPI-${SLURM_NTASKS}_OMP-${SLURM_CPUS_PER_TASK}_JOBID-${SLURM_JOBID}
+
+mkdir -p ${resultdir}
+mv slurm-${SLURM_JOBID}.out ${resultdir}/
+mv output.nc ${resultdir}/

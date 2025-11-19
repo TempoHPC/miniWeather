@@ -18,11 +18,25 @@ echo "Number of threads per MPI process: " $SLURM_CPUS_PER_TASK
 ###################################
 #           COMPILER              #
 ###################################
+#source $SLURM_SUBMIT_DIR/env_sdumont_spack.sh
+#source $SLURM_SUBMIT_DIR/env_sequana_nvhpc.sh
 
-source $SLURM_SUBMIT_DIR/env_sdumont_spack.sh
-source $SLURM_SUBMIT_DIR/env_sequana_nvhpc.sh
+export LD_LIBRARY_PATH=/scratch/cenapadrjsd/rpsouto/usr/lib64:$LD_LIBRARY_PATH
 
-#export LD_LIBRARY_PATH=/scratch/cenapadrjsd/rpsouto/usr/lib64:$LD_LIBRARY_PATH
+module load git/2.23_sequana
+module load python/3.9.1_sequana
+module load gcc/9.3_sequana
+module load cmake/3.23.2_sequana
+module use /scratch/cenapadrjsd/rpsouto/opt/nvidia/hpc_sdk/modulefiles
+module load nvhpc/22.11
+export NVLOCALRC=/scratch/cenapadrjsd/rpsouto/opt/nvidia/hpc_sdk/Linux_x86_64/localrc
+
+workdir=/scratch/cenapadrjsd/rpsouto
+version=v0.18.1
+spackdir=${workdir}/spack/sequana/${version}
+. ${spackdir}/share/spack/setup-env.sh
+
+export SPACK_USER_CONFIG_PATH=${workdir}/spack/sequana/.spack/${version}
 
 export LD_LIBRARY_PATH=$(spack location -i parallel-netcdf@1.12.2%nvhpc@22.11)/lib:$LD_LIBRARY_PATH
 

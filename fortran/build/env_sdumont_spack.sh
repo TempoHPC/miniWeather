@@ -1,3 +1,7 @@
 #!/bin/bash
+workdir=/scratch/cenapadrjsd/rpsouto
+version=v0.18.1
+spackdir=${workdir}/spack/sequana/${version}
+. ${spackdir}/share/spack/setup-env.sh
 
-source /scratch/cenapadrjsd/rpsouto/spack/sequana/.spack/v0.18.1/env_spack_user.sh
+export SPACK_USER_CONFIG_PATH=${workdir}/spack/sequana/.spack/${version}
